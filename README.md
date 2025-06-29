@@ -1,1 +1,13 @@
 # CS-305-Project
+
+My client was Artemis Financial, is a financial services firm that handles sensitive client data and online transactions. The primary concern of theirs was to improve the security of their application by addressing the potential vulnerabilities in data transmissions and integrity. Artemis Financial wanted to ensure secure HTTPS communication, data validation, and detection of tampered files or inputs. 
+
+I successfully identified several security vulnerabilities such as the lack of HTTPS, missing checksums for file validation, and multiple insecure dependencies. What I did well was implementing and utilizing OWASP Dependency-Check and validating SSL configuration and data integrity. In order to protect sensitive data, prevent any exploits and uphold trust among customers, it is critical that code is secure. For a company like Artemis Financial, this could mean avoiding legal liabilities and protecting their reputation. 
+
+One challenging part of the vulnerability assessment was interpreting and understanding the dependency-check results. I found it challenging, but rewarding determining which were critical and finding vulnerabilities that were false positives and supressing them. Understanding each CVE and then tracing it back to the project was tedious but important to learn. 
+
+I increased the layers of security in the application. I enabled HTTPS using SSL certificates. A checksum hashing using HSA-256 was used for file integrity. User inputs were validated as well. In the future, I would assess vulnerabilities and prioritize mitigation techniques based on the risk and impact of potential vulnerabilities.
+
+To ensure that the code remained functional and secure after refactoring the code base, I used unit and integration testing to verify its functionality, running the program both before and after any refactoring occurred to ensure it functions as intended. I used static analysis tools to catch any newly introduced security issues and remedied those issues. I also used manual testing to validate secure behavior, confirming that the security improvements did not break the functionality. 
+
+Some helpful tools and resources I used that would be helpful in the future was the Spring Security for HTTPS and authentication, SHA-256 hashing for the data integrity, and writing clean code following secure development guidelines from OWASP. For future employers, I show the code samples that inlcude the SSL configuration and secure checksum routing, the vulnerability reports generated before and after refactoring the base code, and show that this assignment demonstrates an ability to find, identify, interpret, address, and prevent software vulnerabilities. 
